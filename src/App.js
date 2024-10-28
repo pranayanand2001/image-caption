@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import SearchImages from './components/SearchImages';
+import CanvasEditor from './components/CanvasEditor';
 
-function App() {
+const App = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Name : PRANAY ANAND</p>
+      <p>email: pranayanand.sm@gmail.com</p>
+      <h1>Image Caption App</h1>
+      {!selectedImage ? (
+        <SearchImages setSelectedImage={setSelectedImage} />
+      ) : (
+        <CanvasEditor imageUrl={selectedImage} />
+      )}
     </div>
   );
-}
+};
 
 export default App;
