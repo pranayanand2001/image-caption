@@ -1,7 +1,3 @@
-Here’s a sample **README** file for your image manipulation web app, deploying to **GitHub Pages**:
-
----
-
 # Image Manipulation Web Application
 
 This web application allows users to search for images using the Unsplash API and customize them by adding captions and shapes. The app utilizes Fabric.js for canvas manipulation, enabling users to drag, resize, and reposition elements on the canvas before downloading the modified image.
