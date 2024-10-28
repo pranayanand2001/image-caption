@@ -30,8 +30,8 @@ Check out the live demo on **GitHub Pages**: [Live Demo Link](https://pranayanan
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/image-manipulation-app.git
-   cd image-manipulation-app
+   git clone https://github.com/yourusername/image-caption.git
+   cd image-caption
    ```
 
 2. **Add API Key**:
